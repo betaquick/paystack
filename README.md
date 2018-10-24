@@ -1,11 +1,11 @@
 ## Paystack ![Build status](https://travis-ci.org/theslyone/node-paystack.svg?branch=master)
 
-Nodejs API wrapper for [Paystack](https://paystack.co/).
+Nodejs API wrapper for [Paystack](https://paystack.co/). Modified for BetaQuick
 
 ### Installation
 
 ```
-npm install paystack
+npm install @betaquick/paystack
 ```
 
 ### Usage
