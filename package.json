@@ -1,6 +1,6 @@
 {
   "name": "@betaquick/paystack",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Paystack API wrapper for BetaQuick",
   "main": "index.js",
   "scripts": {
