@@ -111,6 +111,14 @@ paystack.transactions.list({perPage: 20})
 - Miscellanous
   - list_banks
   - resolve_bin
+- transferrecipient
+  - create
+  - list
+- transfer
+  - create
+  - list
+  - get
+  - finalize
   
 
 

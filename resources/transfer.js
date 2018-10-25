@@ -5,7 +5,7 @@ var root = '/transfer';
 module.exports = {
 
   /*
-  Create transfer
+  Initiate transfer
   @param: source, amount, currency, reason, recipient, reference
   */
   create: {
