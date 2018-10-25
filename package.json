@@ -1,7 +1,7 @@
 {
-  "name": "paystack",
-  "version": "2.0.1",
-  "description": "Paystack API wrapper",
+  "name": "@betaquick/paystack",
+  "version": "2.0.2",
+  "description": "Paystack API wrapper for BetaQuick",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha ./test/*.js --reporter spec --timeout 8000"
@@ -12,7 +12,6 @@
     "naira",
     "paystack"
   ],
-  "author": "Opeyemi Obembe <kehers@gmail.com> (http://obem.be/opeyemi)",
   "license": "MIT",
   "dependencies": {
     "promise": "^7.1.1",
@@ -24,10 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kehers/paystack.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kehers/paystack/issues"
-  },
-  "homepage": "https://github.com/kehers/paystack"
+    "url": "git+https://github.com/betaquick/paystack.git"
+  }
 }
