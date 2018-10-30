@@ -8,7 +8,7 @@ module.exports = {
   Fetch settlement
   */
   fetch: {
-      method: 'get',
-      endpoint: root,
+    method: 'get',
+    endpoint: root,
   }
 };

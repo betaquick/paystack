@@ -15,6 +15,14 @@ module.exports = {
   },
 
   /*
+  Initiate bulk transfer
+  */
+  bulk: {
+    method: 'post',
+    endpoint: [root, '/bulk'].join('')
+  },
+
+  /*
   List transfers
   */
   list: {
@@ -39,5 +47,5 @@ module.exports = {
     method: 'post',
     endpoint: [root, '/finalize_transfer'].join(''),
     params: ['transfer_code*', 'otp']
-  },
+  }
 };

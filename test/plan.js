@@ -7,24 +7,23 @@ describe("Paystack Plan", function() {
 
   var plan_id, plan_code;
 
-  
   // New Plan
   it("should create a new plan", function(done) {
     paystack.plan.create({
-        name: 'API Monthly',
-        interval: 'monthly',
-        amount: 100000
-      }).then(function(body){
-        expect(body).to.have.property('data');
-        expect(body.data).to.have.property('id');
-        expect(body.data).to.have.property('plan_code');
+      name: 'API Monthly',
+      interval: 'monthly',
+      amount: 100000
+    }).then(function(body){
+      expect(body).to.have.property('data');
+      expect(body.data).to.have.property('id');
+      expect(body.data).to.have.property('plan_code');
 
-        plan_id = body.data.id;
-        plan_code = body.data.plan_code;
-        done();
-      }).catch(function(error){
-        return done(error);
-      });
+      plan_id = body.data.id;
+      plan_code = body.data.plan_code;
+      done();
+    }).catch(function(error){
+      return done(error);
+    });
   });
 
   // Update Plan

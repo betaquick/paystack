@@ -10,23 +10,24 @@ describe("Paystack Pages", function() {
   // New Page
   it("should create a new page", function(done) {
     paystack.page.create({
-        name: 'API Monthly',
-        amount: 100000
-      })
-      .then(function(body){
-        expect(body).to.have.property('data');
-        expect(body.data).to.have.property('id');
-        page_id = body.data.id;
-        done();
-      })
-      .catch(function(error){
-        return done(error);
-      });
+      name: 'API Monthly',
+      amount: 100000
+    })
+    .then(function(body){
+      expect(body).to.have.property('data');
+      expect(body.data).to.have.property('id');
+      page_id = body.data.id;
+      done();
+    })
+    .catch(function(error){
+      return done(error);
+    });
   });
 
   // Update Page
   it("should update a page", function(done) {
-    paystack.page.update(page_id, {'name': 'Monthly Subscription for API Course'})
+    paystack.page
+    .update(page_id, {'name': 'Monthly Subscription for API Course'})
     .then(function(body){
       expect(body).to.an('object');
       done();
@@ -38,7 +39,8 @@ describe("Paystack Pages", function() {
 
   // Fetch Page
   it("should get details of a page", function(done) {
-    paystack.page.get(page_id)
+    paystack.page
+    .get(page_id)
     .then(function(body){
       expect(body).to.have.property('data');
       expect(body.data).to.have.property('slug');
@@ -51,7 +53,8 @@ describe("Paystack Pages", function() {
 
   // List Pages
   it("should list page", function(done) {
-    paystack.page.list()
+    paystack.page
+    .list()
     .then(function(body){
       expect(body).to.have.property('data');
       expect(body.data).to.be.instanceof(Array);
