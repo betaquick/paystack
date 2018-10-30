@@ -116,6 +116,7 @@ paystack.transactions.list({perPage: 20})
   - list
 - transfer
   - create
+  - bulk
   - list
   - get
   - finalize
